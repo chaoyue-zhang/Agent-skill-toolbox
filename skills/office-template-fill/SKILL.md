@@ -1,6 +1,6 @@
 ---
 name: office-template-fill
-description: Windows 下老式 Word .doc/.docx 与 Excel .xls 模板的保格式批量填充经验（源自生产项目踩坑），并附带公司研发项目文档模板 10 份（项目建议书/任务书/设计开发方案/计划书/输入输出清单/评审验证报告/客户试用报告/结项报告/工时分配表）。涵盖 Word COM (pywin32) doc→docx 转换与 Range 填充、自动编号与合并单元格陷阱、xlrd/xlutils/xlwt 写 .xls、PDF 预览核验、旧内容污染自检。Use when filling Office document templates (project forms, reports, checklists, 工时表) with generated content while preserving the original template formatting, especially legacy binary .doc/.xls files on Windows.
+description: Windows 下老式 Word .doc/.docx 与 Excel .xls 模板的保格式批量填充经验（源自生产项目踩坑），并附带研发项目文档模板 11 份（项目建议书/任务书/设计开发方案/计划书/输入输出清单/评审验证报告/客户试用报告/结项报告/工时分配表）。涵盖 Word COM (pywin32) doc→docx 转换与 Range 填充、自动编号与合并单元格陷阱、xlrd/xlutils/xlwt 写 .xls、PDF 预览核验、旧内容污染自检。Use when filling Office document templates (project forms, reports, checklists, 工时表) with generated content while preserving the original template formatting, especially legacy binary .doc/.xls files on Windows.
 ---
 
 # 老式 Office 模板保格式填充（Windows）
@@ -12,7 +12,7 @@ description: Windows 下老式 Word .doc/.docx 与 Excel .xls 模板的保格式
 
 ## 工作流
 
-0. **取用模板**（复用公司表单体系时）：`assets/templates/` 内含研发项目文档模板 10 份（9 份 .doc + 净化版工时表 .xls）。复制到项目 `模板/` 目录后开工；**填前必读 `references/template-manifest.md`**——模板预印的具体值（编号/日期/样例数量/预写结论）全是格式样例，须按清单覆写。
+0. **取用模板**（复用现成表单体系时）：`assets/templates/` 内含研发项目文档模板 11 份（10 份 .doc + 1 份净化版工时表 .xls）。复制到项目 `模板/` 目录后开工；**填前必读 `references/template-manifest.md`**——模板预印的具体值（编号/日期/样例数量/预写结论）全是格式样例，须按清单覆写。
 1. **转换**：.doc → .docx 批量转换
    `python scripts/convert_doc_to_docx.py <目录或单文件> [<输出目录>]`（Word COM SaveAs2 FileFormat=16）
 2. **探测**（填之前必做，别直接猜坐标）：

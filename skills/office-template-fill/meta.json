@@ -4,7 +4,7 @@
   "category": "办公自动化",
   "version": "1.0.0",
   "status": "active",
-  "description": "Windows 下老式 Word .doc / Excel .xls 模板的保格式批量填充：Word COM 转换与 Range 填充、自动编号与合并单元格陷阱、xlrd/xlutils/xlwt 写 .xls、PDF 预览核验、旧内容污染自检。附研发项目文档模板 10 份（已脱敏）。",
+  "description": "Windows 下老式 Word .doc / Excel .xls 模板的保格式批量填充：Word COM 转换与 Range 填充、自动编号与合并单元格陷阱、xlrd/xlutils/xlwt 写 .xls、PDF 预览核验、旧内容污染自检。附研发项目文档模板 11 份（已脱敏）。",
   "tags": ["office", "word", "excel", "pywin32", "COM", "模板填充", "windows"],
   "create_date": "2026-10-13",
   "update_date": "2026-10-13",
@@ -31,5 +31,5 @@
       "desc": "交付自检的额外 FORBIDDEN 词，逗号分隔（上一项目姓名、旧文号等）"
     }
   ],
-  "screenshot": ""
+  "screenshot": "assets/preview.png"
 }
