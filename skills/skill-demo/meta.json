@@ -1,0 +1,29 @@
+{
+  "id": "skill-demo",
+  "name": "示例技能",
+  "category": "通用",
+  "version": "1.0.0",
+  "status": "active",
+  "description": "用于演示技能卡片结构的模板技能，包含完整的元数据字段与参数定义。",
+  "tags": ["demo", "template", "通用"],
+  "create_date": "2026-10-13",
+  "update_date": "2026-10-13",
+  "usage": "在 skills/ 下复制本目录，改名后修改 meta.json 即可创建新技能。",
+  "notes": "screenshot 字段填写相对技能目录的图片路径；无截图则留空字符串。",
+  "dependencies": [],
+  "params": [
+    {
+      "key": "input_text",
+      "type": "string",
+      "required": true,
+      "desc": "输入文本参数"
+    },
+    {
+      "key": "style",
+      "type": "string",
+      "required": false,
+      "desc": "输出风格，默认 default"
+    }
+  ],
+  "screenshot": "assets/preview.png"
+}

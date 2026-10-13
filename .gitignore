@@ -1,0 +1,17 @@
+# 系统 / 编辑器
+Thumbs.db
+.DS_Store
+desktop.ini
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 构建产物（如希望 Pages 由 Action 现构建，可保留注释；
+# 若想让 docs/ 产物一并入库，请注释掉下面两行）
+# docs/index.html
+# docs/assets/
