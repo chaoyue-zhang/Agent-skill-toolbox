@@ -1,0 +1,9 @@
+# 统一换行符：文本文件一律 LF，二进制交给 git 自动识别
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
