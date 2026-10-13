@@ -1,0 +1,35 @@
+{
+  "id": "office-template-fill",
+  "name": "老式 Office 模板保格式填充",
+  "category": "办公自动化",
+  "version": "1.0.0",
+  "status": "active",
+  "description": "Windows 下老式 Word .doc / Excel .xls 模板的保格式批量填充：Word COM 转换与 Range 填充、自动编号与合并单元格陷阱、xlrd/xlutils/xlwt 写 .xls、PDF 预览核验、旧内容污染自检。附研发项目文档模板 10 份（已脱敏）。",
+  "tags": ["office", "word", "excel", "pywin32", "COM", "模板填充", "windows"],
+  "create_date": "2026-10-13",
+  "update_date": "2026-10-13",
+  "usage": "把本目录放进 .dsh/skills/ 供 Agent 自动加载；或按 SKILL.md 的工作流手动执行 scripts/ 下的探测、填充、核验、自检脚本。涉及 COM 的步骤需宿主机安装 MS Word/Excel。",
+  "notes": "assets/templates/ 内的文号、序号、姓名等预印值均为格式样例，复用时必须按 references/template-manifest.md 覆写；交付前跑 scripts/check_contamination.py，项目专属黑名单经 --extra 传入。",
+  "dependencies": ["pywin32", "python-docx", "pymupdf", "xlrd", "xlutils", "xlwt"],
+  "params": [
+    {
+      "key": "template_dir",
+      "type": "string",
+      "required": true,
+      "desc": "模板目录，例如 assets/templates 或项目自己的 模板/ 目录"
+    },
+    {
+      "key": "output_dir",
+      "type": "string",
+      "required": true,
+      "desc": "填充后的文档输出目录"
+    },
+    {
+      "key": "extra_blacklist",
+      "type": "string",
+      "required": false,
+      "desc": "交付自检的额外 FORBIDDEN 词，逗号分隔（上一项目姓名、旧文号等）"
+    }
+  ],
+  "screenshot": ""
+}
